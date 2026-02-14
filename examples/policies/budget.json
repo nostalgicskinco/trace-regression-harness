@@ -1,0 +1,21 @@
+{
+  "name": "token-budget",
+  "description": "Cost and performance budget assertions",
+  "rules": [
+    {
+      "type": "token-budget",
+      "severity": "error",
+      "params": { "max_tokens": 10000 }
+    },
+    {
+      "type": "max-duration",
+      "severity": "warning",
+      "params": { "max_ms": 30000 }
+    },
+    {
+      "type": "max-span-count",
+      "severity": "warning",
+      "params": { "pattern": "chat", "max_count": 5 }
+    }
+  ]
+}
