@@ -1,0 +1,29 @@
+{
+  "name": "agent-safety",
+  "description": "Safety assertions for production agent traces",
+  "rules": [
+    {
+      "type": "tool-never-called",
+      "severity": "error",
+      "params": { "tool_name": "exec_sql" }
+    },
+    {
+      "type": "tool-never-called",
+      "severity": "error",
+      "params": { "tool_name": "delete_file" }
+    },
+    {
+      "type": "no-errors",
+      "severity": "error"
+    },
+    {
+      "type": "no-sensitive-attrs",
+      "severity": "error"
+    },
+    {
+      "type": "max-span-count",
+      "severity": "warning",
+      "params": { "pattern": "retry", "max_count": 3 }
+    }
+  ]
+}
