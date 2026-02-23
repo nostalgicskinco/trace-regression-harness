@@ -1,5 +1,10 @@
 # Trace Regression Harness
 
+[![CI](https://github.com/airblackbox/trace-regression-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/airblackbox/trace-regression-harness/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/airblackbox/trace-regression-harness/blob/main/LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
+
+
 **Policy assertions for agent traces.** Define rules your AI agent runs must satisfy, then check traces against them. The quality gate between "the agent ran" and "the agent ran correctly."
 
 ## Quick Start
